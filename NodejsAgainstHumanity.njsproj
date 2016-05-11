@@ -1,133 +1,133 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <PropertyGroup>
-        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-        <SchemaVersion>2.0</SchemaVersion>
-        <ProjectGuid>{79a9a143-54f6-4f4e-9696-3152ca5b0d04}</ProjectGuid>
-        <ProjectHome />
-        <ProjectView>ShowAllFiles</ProjectView>
-        <StartupFile>server.js</StartupFile>
-        <WorkingDirectory>.</WorkingDirectory>
-        <OutputPath>.</OutputPath>
-        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
-        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
-        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    </PropertyGroup>
-    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
-    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
-    <ItemGroup>
-        <Content Include="nodejs-against-humanity.png" />
-        <Content Include="cah_all.json" />
-        <Content Include="package.json" />
-        <Content Include="license.md" />
-        <Content Include="README.md" />
-        <Compile Include="cards.js" />
-        <Compile Include="config.js" />
-        <Compile Include="game.js" />
-        <Compile Include="server.js" />
-        <Compile Include="spec.js" />
-        <Compile Include="e2e-test\e2econf.js" />
-        <Compile Include="e2e-test\e2eTest.js" />
-        <Compile Include="routes\routes.js" />
-        <Compile Include="spec\appSpec.js" />
-        <Compile Include="spec\describe_Game_spec.js" />
-        <Compile Include="spec\karma.conf.js" />
-        <Content Include="views\game.html" />
-        <Content Include="views\index.html" />
-        <Content Include="views\lobby.html" />
-        <Content Include="public\css\appStyles.css" />
-        <Content Include="public\css\bootstrap-responsive.css" />
-        <Content Include="public\css\bootstrap-responsive.min.css" />
-        <Content Include="public\css\bootstrap.css" />
-        <Content Include="public\css\bootstrap.min.css" />
-        <Content Include="public\img\glyphicons-halflings-white.png" />
-        <Content Include="public\img\glyphicons-halflings.png" />
-        <Compile Include="public\js\bootstrap-collapse.js" />
-        <Compile Include="public\js\bootstrap.js" />
-        <Compile Include="public\js\bootstrap.min.js" />
-        <Compile Include="public\lib\jquery.js" />
-        <Compile Include="public\lib\jqueryCookie.js" />
-        <Compile Include="public\lib\jqueryTmpl.js" />
-        <Compile Include="public\lib\underscore.js" />
-        <Compile Include="public\js\app\angular_app.js" />
-        <Compile Include="public\js\app\controllers.js" />
-        <Compile Include="public\js\app\directives.js" />
-        <Compile Include="public\js\app\filters.js" />
-        <Compile Include="public\js\app\services.js" />
-        <Content Include="public\lib\angular\version.txt" />
-        <Content Include="public\lib\angular\angular-csp.css" />
-        <Content Include="public\lib\angular\errors.json" />
-        <Content Include="public\lib\angular\version.json" />
-        <Compile Include="public\lib\angular\angular-animate.js" />
-        <Compile Include="public\lib\angular\angular-animate.min.js" />
-        <Compile Include="public\lib\angular\angular-cookies.js" />
-        <Compile Include="public\lib\angular\angular-cookies.min.js" />
-        <Compile Include="public\lib\angular\angular-loader.js" />
-        <Compile Include="public\lib\angular\angular-loader.min.js" />
-        <Compile Include="public\lib\angular\angular-resource.js" />
-        <Compile Include="public\lib\angular\angular-resource.min.js" />
-        <Compile Include="public\lib\angular\angular-route.js" />
-        <Compile Include="public\lib\angular\angular-route.min.js" />
-        <Compile Include="public\lib\angular\angular-sanitize.js" />
-        <Compile Include="public\lib\angular\angular-sanitize.min.js" />
-        <Compile Include="public\lib\angular\angular-touch.js" />
-        <Compile Include="public\lib\angular\angular-touch.min.js" />
-        <Compile Include="public\lib\angular\angular.js" />
-        <Compile Include="public\lib\angular\angular.min.js" />
-    </ItemGroup>
-    <ItemGroup>
-        <Folder Include="e2e-test" />
-        <Folder Include="public" />
-        <Folder Include="public\css" />
-        <Folder Include="public\img" />
-        <Folder Include="public\js" />
-        <Folder Include="public\js\app" />
-        <Folder Include="public\lib" />
-        <Folder Include="public\lib\angular" />
-        <Folder Include="routes" />
-        <Folder Include="spec" />
-        <Folder Include="views" />
-    </ItemGroup>
-    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-    <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
-    <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
-    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
-    <ProjectExtensions>
-        <VisualStudio>
-          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
-            <WebProjectProperties>
-              <UseIIS>False</UseIIS>
-              <AutoAssignPort>True</AutoAssignPort>
-              <DevelopmentServerPort>0</DevelopmentServerPort>
-              <DevelopmentServerVPath>/</DevelopmentServerVPath>
-              <IISUrl>http://localhost:48022/</IISUrl>
-              <NTLMAuthentication>False</NTLMAuthentication>
-              <UseCustomServer>True</UseCustomServer>
-              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
-              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
-            </WebProjectProperties>
-          </FlavorProperties>
-          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
-            <WebProjectProperties>
-              <StartPageUrl>
-              </StartPageUrl>
-              <StartAction>CurrentPage</StartAction>
-              <AspNetDebugging>True</AspNetDebugging>
-              <SilverlightDebugging>False</SilverlightDebugging>
-              <NativeDebugging>False</NativeDebugging>
-              <SQLDebugging>False</SQLDebugging>
-              <ExternalProgram>
-              </ExternalProgram>
-              <StartExternalURL>
-              </StartExternalURL>
-              <StartCmdLineArguments>
-              </StartCmdLineArguments>
-              <StartWorkingDirectory>
-              </StartWorkingDirectory>
-              <EnableENC>False</EnableENC>
-              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
-            </WebProjectProperties>
-          </FlavorProperties>
-        </VisualStudio>
-    </ProjectExtensions>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{79a9a143-54f6-4f4e-9696-3152ca5b0d04}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ProjectFiles</ProjectView>
+    <StartupFile>server.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="nodejs-against-humanity.png" />
+    <Content Include="cah_all.json" />
+    <Content Include="package.json" />
+    <Content Include="license.md" />
+    <Content Include="README.md" />
+    <Compile Include="cards.js" />
+    <Compile Include="config.js" />
+    <Compile Include="game.js" />
+    <Compile Include="server.js" />
+    <Compile Include="spec.js" />
+    <Compile Include="e2e-test\e2econf.js" />
+    <Compile Include="e2e-test\e2eTest.js" />
+    <Compile Include="routes\routes.js" />
+    <Compile Include="spec\appSpec.js" />
+    <Compile Include="spec\describe_Game_spec.js" />
+    <Compile Include="spec\karma.conf.js" />
+    <Content Include="views\game.html" />
+    <Content Include="views\index.html" />
+    <Content Include="views\lobby.html" />
+    <Content Include="public\css\appStyles.css" />
+    <Content Include="public\css\bootstrap-responsive.css" />
+    <Content Include="public\css\bootstrap-responsive.min.css" />
+    <Content Include="public\css\bootstrap.css" />
+    <Content Include="public\css\bootstrap.min.css" />
+    <Content Include="public\img\glyphicons-halflings-white.png" />
+    <Content Include="public\img\glyphicons-halflings.png" />
+    <Compile Include="public\js\bootstrap-collapse.js" />
+    <Compile Include="public\js\bootstrap.js" />
+    <Compile Include="public\js\bootstrap.min.js" />
+    <Compile Include="public\lib\jquery.js" />
+    <Compile Include="public\lib\jqueryCookie.js" />
+    <Compile Include="public\lib\jqueryTmpl.js" />
+    <Compile Include="public\lib\underscore.js" />
+    <Compile Include="public\js\app\angular_app.js" />
+    <Compile Include="public\js\app\controllers.js" />
+    <Compile Include="public\js\app\directives.js" />
+    <Compile Include="public\js\app\filters.js" />
+    <Compile Include="public\js\app\services.js" />
+    <Content Include="public\lib\angular\version.txt" />
+    <Content Include="public\lib\angular\angular-csp.css" />
+    <Content Include="public\lib\angular\errors.json" />
+    <Content Include="public\lib\angular\version.json" />
+    <Compile Include="public\lib\angular\angular-animate.js" />
+    <Compile Include="public\lib\angular\angular-animate.min.js" />
+    <Compile Include="public\lib\angular\angular-cookies.js" />
+    <Compile Include="public\lib\angular\angular-cookies.min.js" />
+    <Compile Include="public\lib\angular\angular-loader.js" />
+    <Compile Include="public\lib\angular\angular-loader.min.js" />
+    <Compile Include="public\lib\angular\angular-resource.js" />
+    <Compile Include="public\lib\angular\angular-resource.min.js" />
+    <Compile Include="public\lib\angular\angular-route.js" />
+    <Compile Include="public\lib\angular\angular-route.min.js" />
+    <Compile Include="public\lib\angular\angular-sanitize.js" />
+    <Compile Include="public\lib\angular\angular-sanitize.min.js" />
+    <Compile Include="public\lib\angular\angular-touch.js" />
+    <Compile Include="public\lib\angular\angular-touch.min.js" />
+    <Compile Include="public\lib\angular\angular.js" />
+    <Compile Include="public\lib\angular\angular.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="e2e-test" />
+    <Folder Include="public" />
+    <Folder Include="public\css" />
+    <Folder Include="public\img" />
+    <Folder Include="public\js" />
+    <Folder Include="public\js\app" />
+    <Folder Include="public\lib" />
+    <Folder Include="public\lib\angular" />
+    <Folder Include="routes" />
+    <Folder Include="spec" />
+    <Folder Include="views" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
