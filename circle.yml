@@ -1,0 +1,7 @@
+machine:
+  node:
+    version: 0.12.7
+test:
+  pre:
+    - npm install jasmine-node -g
+    - jasmine-node ./spec/describe_Game_spec.js
