@@ -5,3 +5,6 @@ test:
   pre:
     - npm install jasmine-node -g
     - jasmine-node ./spec/describe_Game_spec.js
+general:
+  artifacts:
+    - "server.js" 
