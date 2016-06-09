@@ -56,7 +56,7 @@ describe('multi-libs', function() {
     beforeEach(createGame);
 
     it('the game isn\'t considered started', function() {
-      expect(currentGame.isStarted).toBe(true);
+      expect(currentGame.isStarted).toBe(false);
     });
 
     it('a deck is created', function() {
