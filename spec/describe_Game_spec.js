@@ -12,7 +12,7 @@ describe('multi-libs', function() {
   var currentGame;
 
   function createGame() {
-    Game.adGame({ id: gameId, name: "some game" });
+    Game.addGame({ id: gameId, name: "some game" });
     currentGame = Game.getGame(gameId);
   };
 
