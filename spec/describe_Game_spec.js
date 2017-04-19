@@ -3,7 +3,7 @@ var Game = require('../game.js')
 
 describe('multi-libs', function() {
   var playerList = [
-    "Player5",
+    "Player1",
     "Player2",
     "Player3",
     "Player4"
@@ -12,7 +12,7 @@ describe('multi-libs', function() {
   var currentGame;
 
   function createGame() {
-    Game.addGame({ id: gameId, name: "some game" });
+    Game.adGame({ id: gameId, name: "some game" });
     currentGame = Game.getGame(gameId);
   };
 
